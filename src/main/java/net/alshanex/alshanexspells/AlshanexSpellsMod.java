@@ -1,5 +1,10 @@
 package net.alshanex.alshanexspells;
 
+import net.alshanex.alshanexspells.block.ModBlocks;
+import net.alshanex.alshanexspells.effect.ModEffects;
+import net.alshanex.alshanexspells.entity.ModEntities;
+import net.alshanex.alshanexspells.item.ModItems;
+import net.alshanex.alshanexspells.registry.ExampleSpellRegistry;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -53,6 +58,16 @@ public class AlshanexSpellsMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+
+        ExampleSpellRegistry.register(modEventBus);
+
+        ModEntities.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -68,7 +83,10 @@ public class AlshanexSpellsMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.MERAMERA);
+            event.accept(ModItems.HIEHIE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
