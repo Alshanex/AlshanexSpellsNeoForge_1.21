@@ -1,6 +1,7 @@
 package net.alshanex.alshanexspells;
 
 import net.alshanex.alshanexspells.block.ModBlocks;
+import net.alshanex.alshanexspells.datagen.loot.ModLootCodec;
 import net.alshanex.alshanexspells.effect.ModEffects;
 import net.alshanex.alshanexspells.entity.ModEntities;
 import net.alshanex.alshanexspells.item.ModItems;
@@ -67,6 +68,8 @@ public class AlshanexSpellsMod
         ExampleSpellRegistry.register(modEventBus);
 
         ModEntities.register(modEventBus);
+
+        ModLootCodec.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

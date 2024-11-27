@@ -17,10 +17,10 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
-        CompletableFuture<HolderLookup.Provider> provider = event.getLookupProvider();
+        CompletableFuture<HolderLookup.Provider> lookupProvider  = event.getLookupProvider();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
-        //generator.addProvider(event.includeServer(), new ModGlobalLootModifiersProvider(packOutput));
-        generator.addProvider(event.includeServer(), new EntityTagGenerator(packOutput, provider, helper));
+        generator.addProvider(event.includeServer(), new ModLootModifierProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new EntityTagGenerator(packOutput, lookupProvider , helper));
     }
 }

@@ -83,7 +83,7 @@ public class ModEvents {
                         if (attackDirection != null) {
                             FrozenHumanoid shadow = new FrozenHumanoid(player.level(), player);
                             shadow.setShatterDamage(Math.max(event.getOriginalDamage() * 0.1f, 5f));
-                            shadow.setDeathTimer(20);
+                            shadow.setDeathTimer(2);
                             player.level().addFreshEntity(shadow);
                             MagicManager.spawnParticles(player.level(), ParticleHelper.ICY_FOG, player.getX(), player.getY(), player.getZ(), 4, 0, 0, 0, .3, true);
 

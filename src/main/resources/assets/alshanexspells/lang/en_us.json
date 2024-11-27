@@ -13,7 +13,7 @@
   "spell.irons_spellbooks.flower_spell": "Flower Hat",
   "spell.irons_spellbooks.paw_spell": "Paw",
   "spell.irons_spellbooks.end_mayhem": "End's Mayhem",
-  "spell.irons_spellbooks.flag_spell": "Holy Flag",
+  "spell.irons_spellbooks.holy_flag": "Holy Flag",
 
   "spell.irons_spellbooks.hiken.guide": "Strike with a powerful fire fist burning everything in the way.",
   "spell.irons_spellbooks.hibashira.guide": "Summon a fire pilar to burn and hurt your enemies.",
@@ -23,5 +23,5 @@
   "spell.irons_spellbooks.flower_spell.guide": "Summons a cool flower hat that heals the entity over time.",
   "spell.irons_spellbooks.paw_spell.guide": "If you don't target any entity, you will launch a paw forward. If you target an entity, you heal it up and summon a paw upwards to smash the ground with the same damage as the amount healed.",
   "spell.irons_spellbooks.end_mayhem.guide": "This spell allows you to become the ruler of the end while casting it, allowing you to use the full power of the end dimension to kill your target.",
-  "spell.irons_spellbooks.flag_spell.guide": "SUmmon the Holy Flag worn by Jeanne D'Arc to empower your allies and punish your enemies. While the flag is active, holy power is boosted and blood power is nerfed."
+  "spell.irons_spellbooks.holy_flag.guide": "Summon the Holy Flag worn by Jeanne D'Arc to empower your allies and punish your enemies. While the flag is active, holy power is boosted and blood power is nerfed."
 }

@@ -20,8 +20,10 @@ public class MeraMeraItem extends UniqueSpellBook {
                 new SpellDataRegistryHolder(ExampleSpellRegistry.HIKEN, 5),
                 new SpellDataRegistryHolder(ExampleSpellRegistry.HIBASHIRA, 10)
         ), 3);
-        withSpellbookAttributes(new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE));
-        withSpellbookAttributes(new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER.getDelegate(), .10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        withSpellbookAttributes(
+                new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+        );
 
     }
 }

@@ -23,8 +23,10 @@ public class HieHieItem extends UniqueSpellBook {
                 new SpellDataRegistryHolder(ExampleSpellRegistry.ICE_CHAMBER, 5),
                 new SpellDataRegistryHolder(ExampleSpellRegistry.ICE_AGE, 10)
         ), 3);
-        withSpellbookAttributes(new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE));
-        withSpellbookAttributes(new AttributeContainer(AttributeRegistry.ICE_SPELL_POWER.getDelegate(), .10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        withSpellbookAttributes(
+                new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(AttributeRegistry.ICE_SPELL_POWER, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+        );
     }
 
     @Override
