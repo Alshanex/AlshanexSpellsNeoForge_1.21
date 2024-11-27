@@ -1,0 +1,14 @@
+{
+  "type": "alshanexspells:mod_loot_modifier",
+  "conditions": [
+    {
+      "chance": 0.03,
+      "condition": "minecraft:random_chance"
+    },
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+  ],
+  "item": "alshanexspells:meramerafruit"
+}
