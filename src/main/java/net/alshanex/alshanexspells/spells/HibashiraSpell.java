@@ -41,6 +41,8 @@ import static io.redspace.ironsspellbooks.api.util.Utils.random;
 
 @AutoSpellConfig
 public class HibashiraSpell extends AbstractSpell {
+    //Texture by Amadhe
+
     private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "hibashira");
 
     @Override

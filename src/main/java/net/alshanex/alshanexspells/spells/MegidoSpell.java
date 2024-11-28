@@ -22,6 +22,8 @@ import java.util.List;
 
 @AutoSpellConfig
 public class MegidoSpell extends AbstractSpell {
+    //Texture by Amadhe
+
     private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "megido");
 
     @Override
