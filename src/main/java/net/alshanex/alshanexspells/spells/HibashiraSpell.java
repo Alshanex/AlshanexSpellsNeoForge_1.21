@@ -15,6 +15,7 @@ import io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions;
 import io.redspace.ironsspellbooks.registries.ParticleRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.entity.custom.HibashiraEntity;
 import net.alshanex.alshanexspells.util.ASpellAnimations;
 import net.minecraft.core.particles.ParticleOptions;
@@ -40,7 +41,7 @@ import static io.redspace.ironsspellbooks.api.util.Utils.random;
 
 @AutoSpellConfig
 public class HibashiraSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "hibashira");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "hibashira");
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {

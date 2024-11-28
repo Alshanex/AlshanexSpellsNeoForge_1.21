@@ -10,6 +10,7 @@ import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.TargetEntityCastData;
 import io.redspace.ironsspellbooks.entity.spells.fireball.MagicFireball;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.entity.custom.PawEntity;
 import net.alshanex.alshanexspells.util.ASpellAnimations;
 import net.minecraft.network.chat.Component;
@@ -27,7 +28,7 @@ import java.util.Optional;
 
 @AutoSpellConfig
 public class PawSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "paw_spell");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "paw_spell");
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {

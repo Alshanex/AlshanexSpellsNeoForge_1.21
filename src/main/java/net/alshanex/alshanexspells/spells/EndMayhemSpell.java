@@ -17,6 +17,7 @@ import io.redspace.ironsspellbooks.entity.spells.target_area.TargetedAreaEntity;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.spells.TargetAreaCastData;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.util.AUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -45,7 +46,7 @@ import java.util.Random;
 
 @AutoSpellConfig
 public class EndMayhemSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "end_mayhem");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "end_mayhem");
     List<Entity> summons = new ArrayList<>();
 
     @Override

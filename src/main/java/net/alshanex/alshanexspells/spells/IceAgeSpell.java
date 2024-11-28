@@ -17,6 +17,7 @@ import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.ParticleRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.block.ModBlocks;
 import net.alshanex.alshanexspells.datagen.EntityTagGenerator;
 import net.alshanex.alshanexspells.entity.custom.FrozenEntity;
@@ -52,7 +53,7 @@ import static io.redspace.ironsspellbooks.api.util.Utils.random;
 public class IceAgeSpell extends AbstractSpell {
     //Texture by Amadhe
 
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "ice_age");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "ice_age");
 
     private int initialRadius = 0;
 

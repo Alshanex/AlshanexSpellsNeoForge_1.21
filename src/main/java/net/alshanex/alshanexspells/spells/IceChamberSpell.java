@@ -14,6 +14,7 @@ import io.redspace.ironsspellbooks.entity.spells.ray_of_frost.RayOfFrostVisualEn
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.block.ModBlocks;
 import net.alshanex.alshanexspells.datagen.EntityTagGenerator;
 import net.alshanex.alshanexspells.entity.custom.FrozenEntity;
@@ -41,7 +42,7 @@ import java.util.Set;
 
 @AutoSpellConfig
 public class IceChamberSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "ice_chamber");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "ice_chamber");
     private final DefaultConfig defaultConfig = new DefaultConfig()
             .setMinRarity(SpellRarity.EPIC)
             .setSchoolResource(SchoolRegistry.ICE_RESOURCE)

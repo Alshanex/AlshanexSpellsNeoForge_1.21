@@ -8,6 +8,7 @@ import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.entity.custom.HikenEntity;
 import net.alshanex.alshanexspells.util.ASpellAnimations;
 import net.minecraft.network.chat.Component;
@@ -25,7 +26,7 @@ import java.util.Optional;
 @AutoSpellConfig
 
 public class HikenSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "hiken");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "hiken");
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {

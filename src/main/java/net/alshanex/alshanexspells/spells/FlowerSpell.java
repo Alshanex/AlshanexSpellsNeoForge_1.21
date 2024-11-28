@@ -10,6 +10,7 @@ import io.redspace.ironsspellbooks.damage.SpellDamageSource;
 import io.redspace.ironsspellbooks.capabilities.magic.TargetEntityCastData;
 import io.redspace.ironsspellbooks.entity.spells.ice_block.IceBlockProjectile;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.entity.custom.FlowerEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -33,7 +34,7 @@ import java.util.Optional;
 public class FlowerSpell extends AbstractSpell {
     //Texture by hazentouvel.russeltouph
 
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "flower_spell");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "flower_spell");
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {

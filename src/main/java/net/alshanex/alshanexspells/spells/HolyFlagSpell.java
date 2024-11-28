@@ -7,6 +7,7 @@ import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
+import net.alshanex.alshanexspells.AlshanexSpellsMod;
 import net.alshanex.alshanexspells.effect.ModEffects;
 import net.alshanex.alshanexspells.entity.custom.FlagEntity;
 import net.alshanex.alshanexspells.event.ModEvents;
@@ -34,7 +35,7 @@ import java.util.Optional;
 
 @AutoSpellConfig
 public class HolyFlagSpell extends AbstractSpell {
-    private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "holy_flag");
+    private final ResourceLocation spellId = new ResourceLocation(AlshanexSpellsMod.MODID, "holy_flag");
     private FlagEntity currentFlag = null;
 
     @Override
